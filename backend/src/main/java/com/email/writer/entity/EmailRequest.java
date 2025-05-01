@@ -1,3 +1,5 @@
+package com.email.writer.entity;
+
 import lombok.Data;
 
 @Data
