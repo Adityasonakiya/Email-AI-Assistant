@@ -10,12 +10,14 @@ import com.email.writer.entity.EmailRequest;
 
 import lombok.AllArgsConstructor;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 
 
 @RestController
 @RequestMapping("/api/email")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class EmailGeneratorController {
 
     private final EmailGeneratorService emailGeneratorService;
